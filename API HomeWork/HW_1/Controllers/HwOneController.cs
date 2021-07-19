@@ -15,43 +15,54 @@ namespace HW_1.Controllers
 
         private readonly ILogger<HwOneController> _logger;
 
+        
         public HwOneController(ILogger<HwOneController> logger)
         {
             _logger = logger;
         }
 
+        
         [HttpGet]
         public IEnumerable<string> GetAll()
         {
             return Str;
         }
-
+        
         
         [HttpGet("{index}")]
-        public string GetIndex(int index)
+        public IActionResult GetIndex(int index)
         {
-            return Str[index];
+            return Ok(Str[index]);
         }
 
+        
         [HttpDelete]
-        public void DeleteAll()
+        public IActionResult DeleteAll()
         {
             for (int i = Str.Count - 1; i > -1; i--)
             {
                 Str.RemoveAt(i);
             }
+
+            return Ok();
         }
+        
         
         [HttpDelete("{index}")]
-        public void DeleteIndex(int index)
+        public IActionResult DeleteIndex([FromRoute] int index)
         {
             Str.RemoveAt(index);
+            
+            return Ok();
         }
         
+        
         [HttpPut("{predicate}")]
-        public void Put(string predicate)
+        public IActionResult Put(string predicate)
         {
             Str.Add(predicate);
+            
+            return Ok();
         }
     }
 }
