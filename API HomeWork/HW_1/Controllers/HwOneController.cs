@@ -6,7 +6,7 @@ namespace HW_1.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class HwOneController : Controller
+    public class HwOneController : ControllerBase
     {
         private static readonly List<string> Str = new List<string>()
         {
