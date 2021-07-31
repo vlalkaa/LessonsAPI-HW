@@ -24,6 +24,7 @@
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">C:\Users\Алла\.nuget\packages\xunit.analyzers\0.10.0</Pkgxunit_analyzers>
+    <PkgNLog_Config Condition=" '$(PkgNLog_Config)' == '' ">C:\Users\Алла\.nuget\packages\nlog.config\4.7.10</PkgNLog_Config>
     <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\Алла\.nuget\packages\microsoft.codeanalysis.analyzers\2.9.4</PkgMicrosoft_CodeAnalysis_Analyzers>
   </PropertyGroup>
 </Project>

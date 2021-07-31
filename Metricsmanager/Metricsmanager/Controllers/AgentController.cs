@@ -4,13 +4,23 @@ using System.Threading.Tasks;
 using MetricsManager.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using NLog;
 
 namespace MetricsManager.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/controller/agent")]
     [ApiController]
     public class AgentController : ControllerBase
     {
+        private readonly ILogger<AgentController> _logger;
+
+        public AgentController(ILogger<AgentController> logger)
+        {
+            _logger = logger;
+            _logger.LogDebug(1, "nlog встроен в AgentController");
+        }
+
         [HttpGet]
         public IActionResult Check()
         {

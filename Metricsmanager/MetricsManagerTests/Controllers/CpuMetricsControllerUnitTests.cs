@@ -36,19 +36,7 @@ namespace MetricsManagerTests.Controllers
             
             _ = Assert.IsAssignableFrom<IActionResult>(result);
         }
-        
-        [Fact]
-        public void GetMetricsFromAllAgent1_ReturnsOk()
-        {
-            var fromTime = TimeSpan.FromSeconds(0);
-            var toTime = TimeSpan.FromSeconds(100);
-            int percentile = 3;
-            
-            var result = _controller.GetMetricsFromAllAgent(fromTime, toTime,percentile);
-            
-            _ = Assert.IsAssignableFrom<IActionResult>(result);
-        }
-        
+
         [Fact]
         public void GetMetricsFromAllAgent2_ReturnsOk()
         {

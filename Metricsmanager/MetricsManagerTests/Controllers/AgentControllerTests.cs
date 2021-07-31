@@ -1,6 +1,7 @@
 ﻿using MetricsManager.Controllers;
 using MetricsManager.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Xunit;
 
 namespace MetricsManagerTests.Controllers
@@ -9,9 +10,10 @@ namespace MetricsManagerTests.Controllers
     {
         private readonly AgentController _controller;
 
-        public AgentControllerTests()
+        public AgentControllerTests(ILogger<AgentController> logger)
         {
-            _controller = new AgentController();
+            
+            _controller = new AgentController(logger);
         }
 
         [Fact]

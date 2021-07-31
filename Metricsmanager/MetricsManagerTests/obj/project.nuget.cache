@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WCRAQEnDVtW7VrfvaULJRbXy72FYEh4DUUf/DVq7czka3yrKgY5Jl0Ov3aPq1IE3wVCHv3QmsoI+RW2R9wjWqw==",
+  "dgSpecHash": "uNs6IhNcGCMvsS7Ol1XDOgRtD0jbU7KPifJc6+EF79ad5ku5Xne8W9Wv4fVVQgcqsj0wt00pM5JgF+fYB9vgRg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Алла\\Desktop\\LessonsAPI-HW\\Metricsmanager\\MetricsManagerTests\\MetricsManagerTests.csproj",
   "expectedPackageFiles": [
@@ -40,7 +40,9 @@
     "C:\\Users\\Алла\\.nuget\\packages\\microsoft.visualstudio.web.codegenerators.mvc\\3.1.5\\microsoft.visualstudio.web.codegenerators.mvc.3.1.5.nupkg.sha512",
     "C:\\Users\\Алла\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\Алла\\.nuget\\packages\\nlog\\4.7.10\\nlog.4.7.10.nupkg.sha512",
+    "C:\\Users\\Алла\\.nuget\\packages\\nlog.config\\4.7.10\\nlog.config.4.7.10.nupkg.sha512",
     "C:\\Users\\Алла\\.nuget\\packages\\nlog.extensions.logging\\1.7.3\\nlog.extensions.logging.1.7.3.nupkg.sha512",
+    "C:\\Users\\Алла\\.nuget\\packages\\nlog.schema\\4.7.10\\nlog.schema.4.7.10.nupkg.sha512",
     "C:\\Users\\Алла\\.nuget\\packages\\nlog.web.aspnetcore\\4.13.0\\nlog.web.aspnetcore.4.13.0.nupkg.sha512",
     "C:\\Users\\Алла\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",
     "C:\\Users\\Алла\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.114.3\\stub.system.data.sqlite.core.netstandard.1.0.114.3.nupkg.sha512",

@@ -12,8 +12,8 @@ namespace MetricsManager.Controllers
     public class HddMetricsController : ControllerBase
     {
         //размер оставшегося свободного дискового пространства в мегабайтах
-        [HttpGet("left")]
-        public IActionResult GetSizeFreeFromHdd()
+        [HttpGet("left/from/{fromTime}/to/{toTime}")]
+        public IActionResult GetSizeFreeFromHdd([FromRoute] TimeSpan fromTime, [FromRoute] TimeSpan toTime)
         {
             return Ok();
         }

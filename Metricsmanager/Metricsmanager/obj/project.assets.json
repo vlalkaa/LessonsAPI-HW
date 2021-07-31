@@ -595,6 +595,21 @@
           "lib/netstandard2.0/NLog.dll": {}
         }
       },
+      "NLog.Config/4.7.10": {
+        "type": "package",
+        "dependencies": {
+          "NLog": "4.7.10",
+          "NLog.Schema": "4.7.10"
+        },
+        "contentFiles": {
+          "contentFiles/any/any/NLog.config": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "NLog.config"
+          }
+        }
+      },
       "NLog.Extensions.Logging/1.7.3": {
         "type": "package",
         "dependencies": {
@@ -606,6 +621,16 @@
         },
         "runtime": {
           "lib/netcoreapp3.0/NLog.Extensions.Logging.dll": {}
+        }
+      },
+      "NLog.Schema/4.7.10": {
+        "type": "package",
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
         }
       },
       "NLog.Web.AspNetCore/4.13.0": {
@@ -2905,6 +2930,21 @@
         "nlog.nuspec"
       ]
     },
+    "NLog.Config/4.7.10": {
+      "sha512": "/XohRf2gTEUzOF64WI/slTGbFekGT9XmP4Idx9LdcMSMDM+ot3dwtysnzukvOjysPJuIReCTBEXJ6JdCXnUx2A==",
+      "type": "package",
+      "path": "nlog.config/4.7.10",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/NLog.config",
+        "contentFiles/any/any/NLog.config",
+        "nlog.config.4.7.10.nupkg.sha512",
+        "nlog.config.nuspec",
+        "tools/Install.ps1"
+      ]
+    },
     "NLog.Extensions.Logging/1.7.3": {
       "sha512": "7RvUvGd9Ad37pNedjPHbCUroscLGuChLBo0OBveGp92vIpEHLZm/in+Ydd+c9qpv1XMQQIx7yZv1F5qyy/AxHQ==",
       "type": "package",
@@ -2929,6 +2969,19 @@
         "lib/netstandard2.0/NLog.Extensions.Logging.xml",
         "nlog.extensions.logging.1.7.3.nupkg.sha512",
         "nlog.extensions.logging.nuspec"
+      ]
+    },
+    "NLog.Schema/4.7.10": {
+      "sha512": "SgsNWHO8rA/cVMMjuFNnuun0VlR+m79vuh5trIat43qtIw882vxCIJvgLNef7LtrePrF7r9TXIz4XOy5xjZ6tw==",
+      "type": "package",
+      "path": "nlog.schema/4.7.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/NLog.xsd",
+        "contentFiles/any/any/NLog.xsd",
+        "nlog.schema.4.7.10.nupkg.sha512",
+        "nlog.schema.nuspec"
       ]
     },
     "NLog.Web.AspNetCore/4.13.0": {
@@ -6455,7 +6508,7 @@
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.Extensions.DependencyInjection >= 6.0.0-preview.6.21352.12",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.5",
-      "NLog >= 4.7.10",
+      "NLog.Config >= 4.7.10",
       "NLog.Web.AspNetCore >= 4.13.0",
       "System.Data.SQLite.Core >= 1.0.114.3"
     ]
@@ -6503,7 +6556,7 @@
             "target": "Package",
             "version": "[3.1.5, )"
           },
-          "NLog": {
+          "NLog.Config": {
             "target": "Package",
             "version": "[4.7.10, )"
           },

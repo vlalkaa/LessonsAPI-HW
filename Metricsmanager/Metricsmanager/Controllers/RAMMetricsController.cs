@@ -11,8 +11,8 @@ namespace MetricsManager.Controllers
     [ApiController]
     public class RAMMetricsController : ControllerBase
     {
-        [HttpGet("available")]
-        public IActionResult GetSizeFreeFromRam()
+        [HttpGet("available/from/{fromTime}/to/{toTime}")]
+        public IActionResult GetSizeFreeFromRam([FromRoute] TimeSpan fromTime, [FromRoute] TimeSpan toTime)
         {
             return Ok();
         }

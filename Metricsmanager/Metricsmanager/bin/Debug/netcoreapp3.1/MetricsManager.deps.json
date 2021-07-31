@@ -26,7 +26,7 @@
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "6.0.0-preview.6.21352.12",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.5",
-          "NLog": "4.7.10",
+          "NLog.Config": "4.7.10",
           "NLog.Web.AspNetCore": "4.13.0",
           "System.Data.SQLite.Core": "1.0.114.3",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
@@ -847,6 +847,12 @@
           "lib/netstandard2.0/NLog.dll": {}
         }
       },
+      "NLog.Config/4.7.10": {
+        "dependencies": {
+          "NLog": "4.7.10",
+          "NLog.Schema": "4.7.10"
+        }
+      },
       "NLog.Extensions.Logging/1.7.3": {
         "dependencies": {
           "Microsoft.Extensions.Logging": "3.0.0",
@@ -862,6 +868,7 @@
           "lib/netcoreapp3.0/NLog.Extensions.Logging.dll": {}
         }
       },
+      "NLog.Schema/4.7.10": {},
       "NLog.Web.AspNetCore/4.13.0": {
         "dependencies": {
           "NLog.Extensions.Logging": "1.7.3"
@@ -3588,12 +3595,26 @@
       "path": "nlog/4.7.10",
       "hashPath": "nlog.4.7.10.nupkg.sha512"
     },
+    "NLog.Config/4.7.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/XohRf2gTEUzOF64WI/slTGbFekGT9XmP4Idx9LdcMSMDM+ot3dwtysnzukvOjysPJuIReCTBEXJ6JdCXnUx2A==",
+      "path": "nlog.config/4.7.10",
+      "hashPath": "nlog.config.4.7.10.nupkg.sha512"
+    },
     "NLog.Extensions.Logging/1.7.3": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-7RvUvGd9Ad37pNedjPHbCUroscLGuChLBo0OBveGp92vIpEHLZm/in+Ydd+c9qpv1XMQQIx7yZv1F5qyy/AxHQ==",
       "path": "nlog.extensions.logging/1.7.3",
       "hashPath": "nlog.extensions.logging.1.7.3.nupkg.sha512"
+    },
+    "NLog.Schema/4.7.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SgsNWHO8rA/cVMMjuFNnuun0VlR+m79vuh5trIat43qtIw882vxCIJvgLNef7LtrePrF7r9TXIz4XOy5xjZ6tw==",
+      "path": "nlog.schema/4.7.10",
+      "hashPath": "nlog.schema.4.7.10.nupkg.sha512"
     },
     "NLog.Web.AspNetCore/4.13.0": {
       "type": "package",

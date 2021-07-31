@@ -17,7 +17,10 @@ namespace MetricsManagerTests.Controllers
         [Fact]
         public void GetSizeFreeFromHdd_ReturnsOk()
         {
-            var result = _controller.GetSizeFreeFromHdd();
+            var fromTime = TimeSpan.FromSeconds(0);
+            var toTime = TimeSpan.FromSeconds(100);
+            
+            var result = _controller.GetSizeFreeFromHdd(fromTime,toTime);
             
             _ = Assert.IsAssignableFrom<IActionResult>(result);
         }   

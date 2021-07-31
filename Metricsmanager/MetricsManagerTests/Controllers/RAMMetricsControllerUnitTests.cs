@@ -17,7 +17,10 @@ namespace MetricsManagerTests.Controllers
         [Fact]
         public void GetSizeFreeFromRam_ReturnsOk()
         {
-            var result = _controller.GetSizeFreeFromRam();
+            var fromTime = TimeSpan.FromSeconds(0);
+            var toTime = TimeSpan.FromSeconds(100);
+            
+            var result = _controller.GetSizeFreeFromRam(fromTime,toTime);
             
             _ = Assert.IsAssignableFrom<IActionResult>(result);
         }
